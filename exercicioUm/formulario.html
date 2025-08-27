@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pedido Pizza</h1>
+    <form method="post"  action="teste.jsp"> <!-- teste.jsp é como se fosse um caminho direcionado para ocorrer todas as ações seguintes-->
+      <!--post é para não aparecer as informações no dominio | get é para aparecer-->
+        Nome <input type="text" name="nome">
+        <br>
+        Numero Tel: <input type="number" name="telefone">
+        <br>
+        Tamanho:
+        <input type="radio" name="tamanho" value="g"> Grande
+        <input type="radio" name="tamanho" value="m"> Médio
+        <input type="radio" name="tamanho" value="p"> Pequena
+        <br> <!--type radio é para selecionar uma opção-->
+        <select name="sabor"> <!--fazendo uma caixa de seleção-->
+            <option> Calabresa </option>
+            <option> Mussarela </option>
+            <option> Portuguesa </option> <!--inserindo valores que estarão dentro da caixa para seleção-->
+        </select>
+        <br>
+        Adicionais:
+        <input type="checkbox" name="borda" value="sim"> Borda Recheada
+        <input type="checkbox" name="queijo" value="sim"> Queijo Extra
+        <br> <!--type checkbox é para opções onde pode-se selecionar uma ou várias opções-->
+        Entrega: <input type="date" name="dataEntrega"><br>
+        Comentario: <br> <textarea name="mensagem" rows="10" cols="30"></textarea><!--textarea serve para escrever textos grandes dentro da aplicação-->
+        <br>
+        <input type="submit"> <!--faz um botão para enviar -->
+
+
+
+    </form>
+
+
+
+
+</body>
+</html>
